@@ -18,9 +18,12 @@ a{
 .row{
     display :flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+
     align-items: center;
 
+}
+.header .row{
+    justify-content: space-between;
 }
 .list ul{
     display: flex;
@@ -39,10 +42,86 @@ a{
 .menu{
     display: none;
 }
-@media screen and (min-width:320px) and (max-width:991px){
-body{
-    background-color: teal;
+.collection {
+    text-align: center;
+    width:calc((100%-90)/4);
 }
+.collections.row{
+    gap:30px;
+}
+
+
+.collections{
+    padding: 60px 0;
+}
+
+.collection{
+    width: 24%;
+    text-align: center;
+}
+
+.collection img{
+    width: 100%;
+    display: block;
+}
+
+.collection h2{
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+
+
+.bestseller{
+    padding: 60px 0;
+}
+
+.bestseller h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.seller{
+    width: 23%;
+    margin-bottom: 40px;
+}
+
+.seller img{
+    width: 100%;
+    display: block;
+}
+
+.seller h3{
+    font-size: 18px;
+    margin: 15px 0 10px;
+}
+
+.seller span{
+    display: block;
+  
+    margin-bottom: 10px;
+}
+
+.seller p{
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.seller button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: black;
+    color: white;
+    
+}
+
+.seller button:hover{
+    background: #444;
+}
+
+@media screen and (min-width:320px) and (max-width:991px){
+
 .list{
     display: none;
 }
@@ -57,5 +136,36 @@ body{
 .menu{
     display: block;
 }
+
+
+}
+@media screen and (min-width:600px) and (max-width:991px){
+  
+        .collection {
+            width:calc((100%-30)/2);
+        }
+    
+}
+
+@media screen and (min-width:320px) and (max-width:599px){
+    
+    .collection {
+        width:calc(100%);
+    }
+
+}
+@media screen and (min-width:600px) and (max-width:991px){
+
+    .seller{
+        width: calc((100% - 30px) / 2);
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width:599px){
+
+    .seller{
+        width: 100%;
+    }
 
 }
